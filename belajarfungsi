@@ -1,0 +1,54 @@
+<?php 
+
+/* 
+USER DEFINED FUNCTION
+FUNGSI yang harus definisikan sendiri 
+
+format penulisan 
+
+function functionName() {
+  code to be executed;
+}
+------contoh-----
+
+ <?php
+function pesan() {
+  echo "Hello world!";
+}
+
+pesan(); //panggil fungsi
+?> 
+
+
+*/
+
+function salam($waktu = "Pagi", $nama = "Bang Admin") { 
+    //parameter dengan variabel $nama, = "pagi & "bang admin" adalah nilai default
+    //apabila argumen yang diisi dibawah kosong
+
+    return "Selamat $waktu, $nama";
+    //return berguna untuk mengembalikan nilai
+    //urutan ini akan sama dengan urutan argumen dibawah
+}
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        <?= salam("siang","sodik"); ?> 
+        <!-- "sodik" akan dikirimkan sebagai ARGUMENT -->
+        <br>
+        <?= salam(); ?> 
+        <!-- ini akan diisi oleh nilai default karena argumen nya kosong -->
+        
+    </h1>
+</body>
+</html>
