@@ -1,0 +1,15 @@
+<html>
+<head></head>
+<style>
+    h2 {
+        align-item: right;
+    }
+</style>
+<body>
+<h3><span id="tanggalwaktu"></span></h3>
+<script>
+var dt = new Date();
+document.getElementById("tanggalwaktu").innerHTML = dt.toLocaleString();
+</script>
+</body>
+</html>
